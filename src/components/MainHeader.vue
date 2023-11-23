@@ -1,10 +1,11 @@
 <script setup>
+const someList = ['Anime', 'Manga', 'Community', 'Industry', 'Read', 'Help']
 </script>
 
 <template>
   <header class="w-100 text-center">
     <section class="bg-grey-darken-4 background-image">
-      <v-container class="w-100">
+      <v-container>
         <v-row class="align-center" no-gutters>
           <v-col class="text-left">
             <h3>MyAnimeList</h3>
@@ -33,11 +34,24 @@
         </v-row>
       </v-container>
     </section>
+    <section class="mt-2">
+      <v-container>
+        <v-row class="align-center text-left justify-start" no-gutters>
+          <v-col class="mx-2" v-for="item in someList">
+            <v-card class="">
+              <v-card-title class="">
+                {{ item }}
+              </v-card-title>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
   </header>
 </template>
 
 <style scoped>
 .background-image {
-    background-image: url('../assets/backkkground.jpg');
+  background-image: url('../assets/backkkground.jpg');
 }
 </style>
