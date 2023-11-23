@@ -7,13 +7,13 @@ const someList = ['Anime', 'Manga', 'Community', 'Industry', 'Read', 'Help']
     <section class="bg-grey-darken-4 background-image">
       <v-container>
         <v-row class="align-center" no-gutters>
-          <v-col class="text-left">
-            <h3>MyAnimeList</h3>
+          <v-col cols="2" class="text-left">
+            <h1>MyAnimeList</h1>
           </v-col>
           <v-divider vertical></v-divider>
-          <v-col>Anime List</v-col>
-          <v-col>Manga List</v-col>
-          <v-col>Quick Add</v-col>
+          <v-col><h3>Anime List</h3> </v-col>
+          <v-col><h3>Manga List</h3> </v-col>
+          <v-col><h3>Quick Add</h3> </v-col>
           <v-divider vertical></v-divider>
           <v-col>
             <v-icon size="30">mdi-email</v-icon>
@@ -38,9 +38,9 @@ const someList = ['Anime', 'Manga', 'Community', 'Industry', 'Read', 'Help']
       <v-container>
         <v-row class="align-center text-left justify-start" no-gutters>
           <v-col class="mx-2" v-for="item in someList">
-            <v-card class="">
+            <v-card class="pa-1">
               <v-card-title class="">
-                {{ item }}
+                <h3> {{ item }} </h3>
               </v-card-title>
             </v-card>
           </v-col>
