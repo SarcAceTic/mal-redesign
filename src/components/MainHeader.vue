@@ -1,5 +1,12 @@
 <script setup>
-const someList = ['Anime', 'Manga', 'Community', 'Industry', 'Read', 'Help']
+const someList = [
+  { name: 'Anime', options: ['Top', 'Seasonal', 'Recommendations', 'Reviews', 'Videos'] },
+  { name: 'Manga', options: ['Top', 'Store', 'Reviews', 'Recommendations'] },
+  { name: 'Community', options: ['Interest Stacks', 'Forums', 'Clubs', 'Users', 'Blogs'] },
+  { name: 'Industry', options: ['News', 'Articles', 'People', 'Characters', 'Companies']},
+  { name: 'Watch', options: ['Episode Videos', 'Trailers']},
+  { name: 'Help', options: ['About', 'Support', 'Advertising', 'FAQ', 'Report', 'Staff']}
+]
 </script>
 
 <template>
@@ -36,12 +43,15 @@ const someList = ['Anime', 'Manga', 'Community', 'Industry', 'Read', 'Help']
     </section>
     <section class="mt-2">
       <v-container>
-        <v-row class="align-center text-left justify-start" no-gutters>
-          <v-col class="mx-2" v-for="item in someList">
-            <v-card class="pa-1">
+        <v-row class="align-center text-left" no-gutters>
+          <v-col class="ma-3" v-for="item in someList">
+            <v-card class="pa-1 stfu">
               <v-card-title class="">
-                <h3> {{ item }} </h3>
+                <h3>{{ item.name }}</h3>
               </v-card-title>
+              <v-card-text>
+                <p></p>
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>

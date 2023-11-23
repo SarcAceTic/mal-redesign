@@ -102,3 +102,8 @@ h3 {
 h4 {
   font-weight: 500;
 }
+
+p {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 100 !important;
+}
