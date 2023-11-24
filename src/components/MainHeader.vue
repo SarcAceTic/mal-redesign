@@ -45,14 +45,9 @@ const someList = [
       <v-container>
         <v-row class="align-center text-left" no-gutters>
           <v-col class="ma-3" v-for="item in someList">
-            <v-card class="pa-1 stfu">
-              <v-card-title class="">
-                <h3>{{ item.name }}</h3>
-              </v-card-title>
-              <v-card-text>
-                <p></p>
-              </v-card-text>
-            </v-card>
+            <v-btn block variant="outlined" class="pa-6 stfu" color="blue">
+              <h3>{{ item.name }}</h3>
+            </v-btn>
           </v-col>
         </v-row>
       </v-container>
