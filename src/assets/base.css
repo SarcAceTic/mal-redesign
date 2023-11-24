@@ -51,7 +51,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *,
 *::before,
 *::after {
@@ -88,11 +88,15 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fira Sans', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 h1 {
   font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
 }
 
 h3 {
@@ -105,5 +109,5 @@ h4 {
 
 p {
   font-family: 'Montserrat', sans-serif !important;
-  font-weight: 100 !important;
+  font-weight: 400 !important;
 }
