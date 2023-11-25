@@ -91,7 +91,7 @@ const animeList = [
         <v-col class="">
           <v-slide-group class="" show-arrows>
             <v-slide-group-item class="" v-for="anime in animeList">
-              <div class="anime-div pa-4 mx-4">
+              <div class="listing-div pa-4 mx-4">
                 <v-tooltip class="text-center" width="400px" location="end" activator="parent">
                   <p class="text-left">
                     {{ anime.description }}
@@ -107,7 +107,7 @@ const animeList = [
                 </v-tooltip>
                 <div class="overlaaaayy"></div>
                 <div
-                  class="anime-image"
+                  class="listing-image"
                   :style="{ backgroundImage: 'url(' + anime.imageUrl + ')' }"
                 ></div>
                 <h3>{{ anime.title }}</h3>
@@ -125,46 +125,5 @@ const animeList = [
 
 p {
   font-family: 'Poppins', sans-serif !important;
-}
-.anime-div {
-  position: relative;
-  overflow: hidden;
-  background-size: 100% 300px;
-  width: 200px !important;
-  height: 300px !important;
-}
-.anime-div h3 {
-  font-size: 18px;
-  letter-spacing: 1px;
-  position: relative;
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.anime-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.overlaaaayy {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.anime-div:hover .overlaaaayy {
-  opacity: 1;
-}
-.anime-div:hover h3 {
-  opacity: 1;
 }
 </style>

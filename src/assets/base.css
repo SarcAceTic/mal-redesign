@@ -1,4 +1,7 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -49,9 +52,6 @@
     --color-text: var(--vt-c-text-dark-2);
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *,
 *::before,
 *::after {
@@ -110,4 +110,46 @@ h4 {
 
 p {
   font-weight: 400 !important;
+}
+.overlaaaayy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.listing-div {
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 300px;
+  width: 200px !important;
+  height: 300px !important;
+}
+.listing-div h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  position: relative;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.listing-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.listing-div:hover .overlaaaayy {
+  opacity: 1;
+}
+.listing-div:hover h3 {
+  opacity: 1;
 }
