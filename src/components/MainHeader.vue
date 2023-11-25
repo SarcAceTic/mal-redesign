@@ -47,6 +47,13 @@ const someList = [
           <v-col class="ma-3" v-for="item in someList">
             <v-btn block variant="outlined" class="pa-6 stfu" color="blue">
               <h3>{{ item.name }}</h3>
+              <v-menu activator="parent">
+                <v-list>
+                  <v-list-item v-for="option in item.options">
+                    <h4>{{ option }}</h4>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
             </v-btn>
           </v-col>
         </v-row>
