@@ -84,10 +84,10 @@ const animeList = [
 </script>
 
 <template>
-  <section>
+  <section class="mb-8">
     <v-container>
-      <h2>Latest Anime</h2>
-      <v-row class="my-4" no-gutters>
+      <h2 class="my-4 mb-8">Latest Anime</h2>
+      <v-row no-gutters>
         <v-col class="">
           <v-slide-group class="" show-arrows>
             <v-slide-group-item class="" v-for="anime in animeList">
