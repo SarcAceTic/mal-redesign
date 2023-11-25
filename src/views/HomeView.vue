@@ -2,8 +2,7 @@
 import MainHeader from '../components/MainHeader.vue'
 import LatestAnime from '../components/LatestAnime.vue'
 import LatestManga from '../components/LatestManga.vue'
-
-const newsList = []
+import RecentDiscussion from '../components/RecentDiscussion.vue';
 </script>
 
 <template>
@@ -13,6 +12,8 @@ const newsList = []
     <LatestAnime />
     <v-divider></v-divider>
     <LatestManga />
+    <v-divider></v-divider>
+    <RecentDiscussion />
   </main>
 </template>
 
