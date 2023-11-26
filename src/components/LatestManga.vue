@@ -86,9 +86,9 @@ const mangaList = [
     <v-container>
       <h2 class="my-4 mb-8">Latest Manga</h2>
       <v-row no-gutters>
-        <v-col class="">
-          <v-slide-group class="" show-arrows>
-            <v-slide-group-item class="" v-for="manga in mangaList">
+        <v-col>
+          <v-slide-group show-arrows>
+            <v-slide-group-item v-for="manga in mangaList">
               <div class="listing-div pa-4 mx-4">
                 <v-tooltip class="text-center" width="400px" location="end" activator="parent">
                   <p class="text-left">

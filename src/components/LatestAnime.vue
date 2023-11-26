@@ -88,9 +88,9 @@ const animeList = [
     <v-container>
       <h2 class="my-4 mb-8">Latest Anime</h2>
       <v-row no-gutters>
-        <v-col class="">
-          <v-slide-group class="" show-arrows>
-            <v-slide-group-item class="" v-for="anime in animeList">
+        <v-col>
+          <v-slide-group show-arrows>
+            <v-slide-group-item v-for="anime in animeList">
               <div class="listing-div pa-4 mx-4">
                 <v-tooltip class="text-center" width="400px" location="end" activator="parent">
                   <p class="text-left">
